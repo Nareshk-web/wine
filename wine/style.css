@@ -1,0 +1,178 @@
+#type {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-gap: 30px;
+    margin: 30px 100px;
+    color: white;
+    background: rgba(0, 0, 0, 0.3);
+    justify-items: center;
+    align-items: center; 
+}
+
+#type img {
+    margin: 20px;
+}
+
+#type p {
+    margin: 0px 20px;
+    text-align: justify;
+}
+
+#type p:nth-child(1) {
+    font-size: 30px;  
+    line-height: 100px;  
+}
+
+#type p:nth-child(2) {
+    line-height: 30px;
+}
+
+.name {
+    font-size: 30px;
+}
+
+#text-area-1 {
+    grid-area: 1 / 2 / span 1 / span 2;
+}
+
+#text-area-2 {
+    grid-area: 2 / 1 / span 1 / span 2;
+}
+
+#text-area-3 {
+    grid-area: 3 / 2 / span 1 / span 2;
+}
+
+#text-area-4 {
+    grid-area: 4 / 1 / span 1 / span 2;
+}
+
+#text-area-5 {
+    grid-area: 5 / 2 / span 1 / span 2;
+}
+
+#text-area-6 {
+    grid-area: 6 / 1 / span 1 / span 2;
+}
+
+#popular {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-gap: 50px;
+    margin: 30px 100px;
+    padding: 10px;
+    color: white;
+    justify-items: center;
+    align-items: center; 
+    text-align: center;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+#popular  img {
+    width: 200px;
+    margin: 5px;
+}
+
+#process {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-gap: 50px;
+    margin: 30px 100px;
+    padding: 10px;
+    color: white;
+    background: rgba(0, 0, 0, 0.3);
+    justify-items: center;
+    align-items: center; 
+    text-align: center;
+}
+
+#process img {
+    width: 300px;
+}
+
+#process div p {
+    font-weight: bold;
+}
+
+.border {
+    border: 1px solid white;
+}
+
+#nav {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 100px;
+}
+
+#nav a {
+    margin: 10px;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px black;
+    border-radius: 10px;
+}
+
+#nav a:hover {
+    background: white;
+    color: black;
+}
+
+#nav a.active {
+    background: white;
+    color: black;
+}
+
+.heading {
+    text-align: center;
+    font-size: 40px;
+    text-decoration: underline;
+    color: white;
+}
+
+body {
+    background: url(resources/background.jpg);
+    background-size: cover;
+}
+
+#quote {
+    margin: 50px;
+    font-size: 50px;
+    color:wheat;
+    
+}
+
+@media (max-width: 600px) {
+    #resp-bg {
+        background: url(resources/background.jpg);
+        background-size: auto cover;
+    }
+
+    #nav {
+        flex-direction: column-reverse;
+        margin: 0px;
+    }
+
+    #process , #popular{
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+
+    #type {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        margin: 0px;
+    }
+
+    #type img {
+        margin: 2px;
+    }
+    
+    #type p {
+        margin: 0px 10px;
+    }
+}
